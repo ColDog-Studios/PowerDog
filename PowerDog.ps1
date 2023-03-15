@@ -12,14 +12,14 @@ function New-ColDogLocker {
 
     try {
         # Create the folder if it does not exist
-        $FolderPath = Join-Path $Path $Name
-        if (-not(Test-Path $FolderPath -PathType Container)) { New-Item -ItemType Directory -Path $FolderPath }
+        $FolderPath = Join-Path "$Path" "$Name"
+        if (-not(Test-Path "$FolderPath" -PathType Container)) { New-Item -ItemType Directory -Path "$FolderPath" }
 
         # Secure the folder
-        $Acl = Get-Acl $FolderPath
+        $Acl = Get-Acl "$FolderPath"
         $Ar = New-Object System.Security.AccessControl.FileSystemAccessRule($env:USERNAME,"FullControl","Allow")
         $Acl.SetAccessRule($Ar)
-        Set-Acl $FolderPath $Acl
+        Set-Acl "$FolderPath" $Acl
     }
     catch {
         # Handle any errors that occured
