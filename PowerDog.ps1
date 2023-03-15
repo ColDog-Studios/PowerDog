@@ -6,7 +6,7 @@ function New-ColDogLocker {
     param (
         [Parameter(Mandatory=$true, position=0)]
         [string]$Name,
-        [Parameter(Mandatory=$true, position=1)]
+        [Parameter(Mandatory=$false, position=1)]
         [string]$Path
     )
 
