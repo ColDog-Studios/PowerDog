@@ -24,6 +24,7 @@ function New-ColDogLocker {
     catch {
         # Handle any errors that occured
         Write-Host "There was an error creating $Name. Ensure you have sufficient permissions. Error: $($_.Exception.Message)"
+        exit 1
     }
     
     <#
