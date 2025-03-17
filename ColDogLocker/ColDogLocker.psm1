@@ -101,6 +101,29 @@ function Unprotect-ColDogLocker {
 
 }
 
+function Get-ColDogLocker {
+    <#
+    .SYNOPSIS
+    Retrieves information about a ColDog Locker.
+
+    .DESCRIPTION
+    This function retrieves information about a ColDog Locker.
+
+    .INPUTS
+    None
+
+    .OUTPUTS
+    [string] Information about the ColDog Locker.
+
+    .NOTES
+    #>
+
+    [CmdletBinding()]
+    param (
+
+    )
+
+}
 
 
 
