@@ -1,9 +1,25 @@
-###############################################################################
-# MODULE: ColDogLocker
-# DESCRIPTION: This module contains custom functions for ColDog Locker CLI.
-# AUTHOR: Collin Laney
-# VERSION: 0.1.0
-###############################################################################
+#Requires -Version 5.1
+
+<#
+.SYNOPSIS
+    This module contains custom functions for ColDog Locker CLI.
+
+.DESCRIPTION
+    This module contains custom functions for ColDog Locker CLI.
+
+.NOTES
+    File Name      : ColDogLocker.psm1
+    Author         : Collin Laney
+    Version        : 0.1.0
+    Creation Date  : 2025-03-16
+    Revision Date  : 2025-03-20
+    Purpose        : Contains custom functions for ColDog Locker CLI.
+    History        : 0.1.0 - Initial version.
+    License        : All rights reserved.
+
+.LINK
+    https://www.example.com/help/PowerDog/ColDogLockerCLI
+#>
 
 function New-ColDogLocker {
     <#
@@ -193,89 +209,5 @@ function Update-ColDogLocker {
 }
 
 
-
-###############################################################################
-# EXAMPLES
-###############################################################################
-
-
-
-function Get-ColDogInfo {
-    <#
-    .SYNOPSIS
-    Retrieves information about ColDog Studios.
-
-    .DESCRIPTION
-    This function retrieves and displays information about ColDog Studios.
-
-    .PARAMETER Name
-    The name of the entity to retrieve information about.
-
-    .INPUTS
-    [string] The name of the entity.
-
-    .OUTPUTS
-    [string] Information about the entity.
-
-    .NOTES
-    Author: Your Name
-    This function is not supported in Linux.
-
-    .EXAMPLE
-    Get-ColDogInfo -Name "ProjectX"
-    Retrieves information about ProjectX from ColDog Studios.
-
-    .LINK
-    https://www.example.com/help/Get-ColDogInfo
-    #>
-    param (
-        [string]$Name
-    )
-    Write-Output "Information about $Name from ColDog Studios."
-}
-
-function Set-ColDogConfig {
-    <#
-    .SYNOPSIS
-    Sets configuration for ColDog Studios tools.
-
-    .DESCRIPTION
-    This function sets configuration parameters for ColDog Studios tools.
-
-    .PARAMETER ConfigName
-    The name of the configuration parameter to set.
-
-    .PARAMETER ConfigValue
-    The value to set for the configuration parameter.
-
-    .INPUTS
-    [string] The name of the configuration parameter.
-    [string] The value to set for the configuration parameter.
-
-    .OUTPUTS
-    [string] Confirmation message.
-
-    .NOTES
-    Author: Your Name
-    This function is not supported in Linux.
-
-    .EXAMPLE
-    Set-ColDogConfig -ConfigName "Theme" -ConfigValue "Dark"
-    Sets the theme configuration to Dark.
-
-    .LINK
-    https://www.example.com/help/Set-ColDogConfig
-    #>
-    param (
-        [string]$ConfigName,
-        [string]$ConfigValue
-    )
-    Write-Output "Setting $ConfigName to $ConfigValue."
-}
-
-###############################################################################
-# END
-###############################################################################
-
 # Export the functions
-Export-ModuleMember -Function New-ColDogLocker, Remove-ColDogLocker, Protect-ColDogLocker, Unprotect-ColDogLocker
+Export-ModuleMember -Function New-ColDogLocker, Remove-ColDogLocker, Protect-ColDogLocker, Unprotect-ColDogLocker, Get-ColDogLocker, Update-ColDogLocker
