@@ -8,18 +8,25 @@
 function New-ColDogLocker {
     <#
     .SYNOPSIS
-    Creates a new ColDog Locker.
+        Creates a new Locker.
 
     .DESCRIPTION
-    This function creates a new ColDog Locker.
+        This function creates a new Locker.
 
     .INPUTS
-    None
+        None
 
     .OUTPUTS
-    [string] Confirmation message.
+        None
 
     .NOTES
+        None
+
+    .EXAMPLE
+        New-ColDogLocker
+
+    .LINK
+        https://www.example.com/help/New-ColDogLocker
     #>
 
     [CmdletBinding()]
@@ -32,18 +39,25 @@ function New-ColDogLocker {
 function Remove-ColDogLocker {
     <#
     .SYNOPSIS
-    Removes a ColDog Locker.
+        Removes a Locker.
 
     .DESCRIPTION
-    This function removes a ColDog Locker.
+        This function removes a Locker.
 
     .INPUTS
-    None
+        None
 
     .OUTPUTS
-    [string] Confirmation message.
+        None
 
     .NOTES
+        None
+
+    .EXAMPLE
+        Remove-ColDogLocker
+
+    .LINK
+        https://www.example.com/help/Remove-ColDogLocker
     #>
 
     [CmdletBinding()]
@@ -56,18 +70,25 @@ function Remove-ColDogLocker {
 function Protect-ColDogLocker {
     <#
     .SYNOPSIS
-    Protects a ColDog Locker.
+        Encrypts a Locker.
 
     .DESCRIPTION
-    This function protects a ColDog Locker.
+        This function encrypts a Locker.
 
     .INPUTS
-    None
+        None
 
     .OUTPUTS
-    [string] Confirmation message.
+        None
 
     .NOTES
+        None
+    
+    .EXAMPLE
+        Protect-ColDogLocker
+    
+    .LINK
+        https://www.example.com/help/Protect-ColDogLocker
     #>
 
     [CmdletBinding()]
@@ -80,18 +101,25 @@ function Protect-ColDogLocker {
 function Unprotect-ColDogLocker {
     <#
     .SYNOPSIS
-    Unprotects a ColDog Locker.
+        Decrypts a Locker.
 
     .DESCRIPTION
-    This function unprotects a ColDog Locker.
+        This function decrypts a Locker.
 
     .INPUTS
-    None
+        None
 
     .OUTPUTS
-    [string] Confirmation message.
+        None
 
     .NOTES
+        None
+    
+    .EXAMPLE
+        Unprotect-ColDogLocker
+    
+    .LINK
+        https://www.example.com/help/Unprotect-ColDogLocker
     #>
 
     [CmdletBinding()]
@@ -104,18 +132,57 @@ function Unprotect-ColDogLocker {
 function Get-ColDogLocker {
     <#
     .SYNOPSIS
-    Retrieves information about a ColDog Locker.
+        Retrieves information about one or more ColDog Lockers.
 
     .DESCRIPTION
-    This function retrieves information about a ColDog Locker.
+        This function retrieves information about one or more ColDog Lockers. 
+        If no specific identifier is provided, it returns all ColDog Lockers.
 
     .INPUTS
-    None
+        None
 
     .OUTPUTS
-    [string] Information about the ColDog Locker.
+        None
 
     .NOTES
+        None
+
+    .EXAMPLE
+        Get-ColDogLocker
+
+    .LINK
+        https://www.example.com/help/Get-ColDogLocker
+    #>
+
+    [CmdletBinding()]
+    param (
+
+    )
+
+}
+
+function Update-ColDogLocker {
+    <#
+    .SYNOPSIS
+        Updates the properties of a ColDog Locker.
+
+    .DESCRIPTION
+        This function updates the properties or configuration of an existing ColDog Locker.
+
+    .INPUTS
+        None
+
+    .OUTPUTS
+        None
+
+    .NOTES
+        None
+    
+    .EXAMPLE
+        Update-ColDogLocker
+
+    .LINK
+        https://www.example.com/help/Update-ColDogLocker
     #>
 
     [CmdletBinding()]
